@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>3D scanner</title>
 </head>
 
 <body>
@@ -20,7 +22,8 @@
                 <div class="col-11">
                     <div class="jumbotron mt-4">
                         <h1 class="display-4">¿Qué es la <br>fotogrametría?</h1>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <p class="lead">La fotogrametría es una técnica para crear modelos 3D con texturas foto-realistas. Se toman centenares de imágenes de distintos puntos de vista de un producto y se procesan en un software para obtener una replica en tres dimensiones.
+                            Esto se realiza en un plató equipado con un gran número de cámaras dispuestas para realizar una captura envolvente 360º del objeto.</p>
                     </div>
                 </div>
 
@@ -51,15 +54,14 @@
                         </a>
                     </div>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend mi dolor, pharetra dictum ipsum molestie luctus. Phasellus ipsum eros, suscipit sit amet euismod ut, elementum nec justo. Sed eu ipsum leo. Cras accumsan
-                        orci et elit sodales feugiat. Donec rhoncus augue et arcu semper posuere. Duis id lorem eget turpis placerat placerat nec ac lacus. Cras dapibus laoreet nulla, vel finibus velit posuere nec. Maecenas pulvinar eros nec pretium tempus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend mi dolor, pharetra dictum ipsum molestie luctus. Phasellus ipsum eros, suscipit sit amet euismod ut, elementum nec justo. Sed eu ipsum leo. Cras accumsan
-                        orci et elit sodales feugiat. Donec rhoncus augue et arcu semper posuere. Duis id lorem eget turpis placerat placerat nec ac lacus. Cras dapibus laoreet nulla, vel finibus velit posuere nec. Maecenas pulvinar eros nec pretium tempus.</p>
+                    <p>Una parte del proceso está automatizado para mayor fluidez, el disparo de las cámaras y la descarga de las imágenes. Para el postprocesado contamos con un artista digital que retoca el resultado para asegurar la máxima calidad.</p>
+                    <p>Los scans en alta resolución se usan para crear imágenes de producto y videos que requieran gran detalle. A partir de este modelo High se extraen otras versiones optimizadas para Web, Apps, AR (Realidad Aumentada) o VR (Realidad Virtual).</p>
                     <div class="embed-responsive embed-responsive-16by9 mt-3 mb-3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                        <iframe title="vimeo-player" class="embed-responsive-item" src="https://player.vimeo.com/video/524808964" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
                     </div>
                     <blockquote class="blockquote p-5">
-                        <p class="mb-0 text-center font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="mb-0 text-center font-weight-bold">La fotogrametría ofrece mayor rapidez, escalabidilidad y versatilidad respecto a otros procesos de scan. Ofrece acabados hiper-realistas en modelos complejos y orgánicos.</p>
                     </blockquote>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -96,16 +98,19 @@
                     <h1 class="display-4">Casos Prácticos</h1>
                     <p class="h4">E-commerce tradicional</p>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend mi dolor, pharetra dictum ipsum molestie luctus. Phasellus ipsum eros, suscipit sit amet euismod ut, elementum nec justo. Sed eu ipsum leo. Cras accumsan
-                        orci et elit sodales feugiat. Donec rhoncus augue et arcu semper posuere.</p>
+                    <p>Se puede insertar el contenido en cualquier página web/app para obtener una visión más detallada y en 3d.</p>
                     <div class="embed-responsive embed-responsive-16by9 mt-3 mb-3">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
                     </div>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend mi dolor, pharetra dictum ipsum molestie luctus. Phasellus ipsum eros, suscipit sit amet euismod ut, elementum nec justo. Sed eu ipsum leo. Cras accumsan
                         orci et elit sodales feugiat. Donec rhoncus augue et arcu semper posuere.</p>
-                    <img src="https://picsum.photos/1920/1080" class="img-fluid mb-3" alt="Responsive image">
-                    <img src="https://picsum.photos/1920/1080" class="img-fluid mb-3" alt="Responsive image">
+                    <model-viewer style="width: 100%; height: 800px; top: 0px;" src="https://cdn.glitch.com/15ae9f16-9975-462f-8052-4fc184616324%2Fscene%20(1).glb?v=1602680028841" ios-src="https://cdn.glitch.com/15ae9f16-9975-462f-8052-4fc184616324%2FAdidas_57K.usdz?v=1602680093069"
+                        poster="https://cdn.glitch.com/15ae9f16-9975-462f-8052-4fc184616324%2Fpngwing.com.png?v=1602680132110" alt="adidas sneaker" shadow-intensity="1" camera-controls auto-rotate ar>
+                    </model-viewer>
+                    <model-viewer style="width: 100%; height: 800px; top: 0px;" src="https://cdn.glitch.com/f745ec55-3c32-4972-b535-5f50f9104acc%2Fscene%20(11).glb?v=1611151067843" ios-src="https://cdn.glitch.com/f745ec55-3c32-4972-b535-5f50f9104acc%2Fusdz_scene__11____1611151092065.usdz?v=1611151137765"
+                        poster="https://cdn.glitch.com/f745ec55-3c32-4972-b535-5f50f9104acc%2Flogo.png?v=1610376366184" alt="Flax & Kale" camera-controls autoplay ar>
+                    </model-viewer>
                     <p class="h4">E-commerce aumentado</p>
                     <hr>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend mi dolor, pharetra dictum ipsum molestie luctus. Phasellus ipsum eros, suscipit sit amet euismod ut, elementum nec justo. Sed eu ipsum leo. Cras accumsan

@@ -5,3 +5,8 @@
         font-size: 2em !important;
     }
 }
+
+model-viewer {
+    width: 800px;
+    height: 600px;
+}
